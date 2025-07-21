@@ -19,19 +19,19 @@ const Contact = () => {
     {
       icon: Mail,
       title: "Email",
-      value: "sneha@example.com",
-      href: "mailto:sneha@example.com",
+      value: "sneha1995sarkar@gmail.com",
+      href: "mailto:sneha1995sarkar@gmail.com",
     },
     {
       icon: Phone,
       title: "Phone",
-      value: "+1 (555) 123-4567",
-      href: "tel:+15551234567",
+      value: "+91 7439-6051-44",
+      href: "tel:+917439605144",
     },
     {
       icon: MapPin,
       title: "Location",
-      value: "Your City, Country",
+      value: "Kolkata, West Bengal, India",
       href: "#",
     },
   ]

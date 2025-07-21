@@ -1,11 +1,12 @@
 "use client"
 
 import type React from "react"
+import { useState } from "react"
 
 import { Card, CardContent, CardDescription, CardHeader, CardTitle } from "@/components/ui/card"
 import { Badge } from "@/components/ui/badge"
 import { Button } from "@/components/ui/button"
-import { Github, ExternalLink, GitFork } from "lucide-react"
+import { Github, ExternalLink, GitFork, Eye, EyeOff } from "lucide-react"
 const getLanguageColor = (language: string): string => {
   const colorMap: { [key: string]: string } = {
     TypeScript: "bg-blue-500",
@@ -33,6 +34,8 @@ interface ProjectCardProps {
 }
 
 const ProjectCard: React.FC<ProjectCardProps> = ({ repo }) => {
+  const [showPreview, setShowPreview] = useState(false)
+
   return (
     <Card className="h-full hover:shadow-lg transition-all duration-300 hover:-translate-y-1 group">
       <CardHeader className="pb-3">
@@ -54,6 +57,32 @@ const ProjectCard: React.FC<ProjectCardProps> = ({ repo }) => {
           {repo.description || "No description available"}
         </CardDescription>
       </CardHeader>
+      
+      {/* Live Preview Section */}
+      {repo.homepage && showPreview && (
+        <div className="px-6 pb-4">
+          <div className="relative w-full h-64 border rounded-lg overflow-hidden bg-gray-50">
+            <iframe
+              src={repo.homepage}
+              className="w-full h-full"
+              title={`Live preview of ${repo.name}`}
+              loading="lazy"
+              sandbox="allow-scripts allow-same-origin allow-forms allow-popups allow-presentation"
+            />
+            <div className="absolute top-2 right-2">
+              <Button
+                variant="secondary"
+                size="sm"
+                onClick={() => setShowPreview(false)}
+                className="h-6 w-6 p-0 bg-white/80 hover:bg-white"
+              >
+                <EyeOff className="w-3 h-3" />
+              </Button>
+            </div>
+          </div>
+        </div>
+      )}
+      
       <CardContent className="pt-0">
         <div className="flex flex-wrap gap-1 sm:gap-2 mb-4">
           {repo.topics?.slice(0, 3).map((topic: string) => (
@@ -87,11 +116,22 @@ const ProjectCard: React.FC<ProjectCardProps> = ({ repo }) => {
               </a>
             </Button>
             {repo.homepage && (
-              <Button variant="outline" size="sm" asChild className="h-8 w-8 p-0 bg-transparent">
-                <a href={repo.homepage} target="_blank" rel="noopener noreferrer" title="Live Demo">
-                  <ExternalLink className="w-3 h-3 sm:w-4 sm:h-4" />
-                </a>
-              </Button>
+              <>
+                <Button 
+                  variant="outline" 
+                  size="sm" 
+                  onClick={() => setShowPreview(!showPreview)}
+                  className="h-8 w-8 p-0 bg-transparent"
+                  title={showPreview ? "Hide Preview" : "Show Preview"}
+                >
+                  {showPreview ? <EyeOff className="w-3 h-3 sm:w-4 sm:h-4" /> : <Eye className="w-3 h-3 sm:w-4 sm:h-4" />}
+                </Button>
+                <Button variant="outline" size="sm" asChild className="h-8 w-8 p-0 bg-transparent">
+                  <a href={repo.homepage} target="_blank" rel="noopener noreferrer" title="Live Demo">
+                    <ExternalLink className="w-3 h-3 sm:w-4 sm:h-4" />
+                  </a>
+                </Button>
+              </>
             )}
           </div>
         </div>

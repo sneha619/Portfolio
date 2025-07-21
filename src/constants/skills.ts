@@ -5,7 +5,7 @@ export const SKILL_CATEGORIES = [
   },
   {
     title: "Backend",
-    skills: ["Node.js", "Express.js", "Python", "REST APIs", "GraphQL"],
+    skills: ["Node.js", "Express.js", "Java", "REST APIs", "GraphQL"],
   },
   {
     title: "Database",
@@ -13,6 +13,6 @@ export const SKILL_CATEGORIES = [
   },
   {
     title: "Tools & Others",
-    skills: ["Git", "GitHub", "VS Code", "Figma", "Vercel", "Netlify", "Docker"],
+    skills: ["Git", "GitHub", "VS Code", "Figma", "Vercel", "Netlify", "AWS"],
   },
 ]

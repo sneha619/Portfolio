@@ -71,7 +71,7 @@ const Hero = () => {
                   </a>
                 </Button>
                 <Button variant="outline" size="icon" asChild className="shrink-0 bg-transparent">
-                  <a href="https://linkedin.com/in/sneha619" target="_blank" rel="noopener noreferrer" title="LinkedIn">
+                  <a href="https://www.linkedin.com/in/sneha-sarkar-904a83262/" target="_blank" rel="noopener noreferrer" title="LinkedIn">
                     <Linkedin className="w-4 h-4 sm:w-5 sm:h-5" />
                   </a>
                 </Button>
@@ -86,7 +86,7 @@ const Hero = () => {
                   </a>
                 </Button>
                 <Button variant="outline" size="icon" asChild className="shrink-0 bg-transparent">
-                  <a href="mailto:sneha@example.com" title="Email">
+                  <a href="mailto:sneha1995sarkar25@gmail.com" title="Email">
                     <Mail className="w-4 h-4 sm:w-5 sm:h-5" />
                   </a>
                 </Button>
