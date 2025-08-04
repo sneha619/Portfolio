@@ -116,7 +116,7 @@ const Hero = () => {
                 <div className="w-full h-full rounded-full bg-background" />
               </motion.div>
               <Image
-                src="/placeholder.svg?height=400&width=400"
+                src="/sneha.jpeg"
                 alt="Sneha Sarkar"
                 width={400}
                 height={400}

@@ -38,7 +38,7 @@ const Footer = () => {
               </a>
             </Button>
             <Button variant="outline" size="icon" asChild>
-              <a href="mailto:sneha1995sarkar@gmail.com" title="Email">
+              <a href="mailto:sneha1995sarkar25@gmail.com" title="Email">
                 <Mail className="w-5 h-5" />
               </a>
             </Button>

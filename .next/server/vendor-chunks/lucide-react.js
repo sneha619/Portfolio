@@ -141,16 +141,6 @@ eval("__webpack_require__.r(__webpack_exports__);\n/* harmony export */ __webpac
 
 /***/ }),
 
-/***/ "(ssr)/./node_modules/lucide-react/dist/esm/icons/git-fork.js":
-/*!**************************************************************!*\
-  !*** ./node_modules/lucide-react/dist/esm/icons/git-fork.js ***!
-  \**************************************************************/
-/***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
-
-eval("__webpack_require__.r(__webpack_exports__);\n/* harmony export */ __webpack_require__.d(__webpack_exports__, {\n/* harmony export */   \"default\": () => (/* binding */ GitFork)\n/* harmony export */ });\n/* harmony import */ var _createLucideIcon_js__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ../createLucideIcon.js */ \"(ssr)/./node_modules/lucide-react/dist/esm/createLucideIcon.js\");\n/**\n * lucide-react v0.292.0 - ISC\n */\n\n\n\nconst GitFork = (0,_createLucideIcon_js__WEBPACK_IMPORTED_MODULE_0__[\"default\"])(\"GitFork\", [\n  [\"circle\", { cx: \"12\", cy: \"18\", r: \"3\", key: \"1mpf1b\" }],\n  [\"circle\", { cx: \"6\", cy: \"6\", r: \"3\", key: \"1lh9wr\" }],\n  [\"circle\", { cx: \"18\", cy: \"6\", r: \"3\", key: \"1h7g24\" }],\n  [\"path\", { d: \"M18 9v2c0 .6-.4 1-1 1H7c-.6 0-1-.4-1-1V9\", key: \"1uq4wg\" }],\n  [\"path\", { d: \"M12 12v3\", key: \"158kv8\" }]\n]);\n\n\n//# sourceMappingURL=git-fork.js.map\n//# sourceURL=[module]\n//# sourceMappingURL=data:application/json;charset=utf-8;base64,eyJ2ZXJzaW9uIjozLCJmaWxlIjoiKHNzcikvLi9ub2RlX21vZHVsZXMvbHVjaWRlLXJlYWN0L2Rpc3QvZXNtL2ljb25zL2dpdC1mb3JrLmpzIiwibWFwcGluZ3MiOiI7Ozs7O0FBQUE7QUFDQTtBQUNBOztBQUVzRDs7QUFFdEQsZ0JBQWdCLGdFQUFnQjtBQUNoQyxlQUFlLDJDQUEyQztBQUMxRCxlQUFlLHlDQUF5QztBQUN4RCxlQUFlLDBDQUEwQztBQUN6RCxhQUFhLDhEQUE4RDtBQUMzRSxhQUFhLDhCQUE4QjtBQUMzQzs7QUFFOEI7QUFDOUIiLCJzb3VyY2VzIjpbIndlYnBhY2s6Ly9teS1wcm9maWxlLy4vbm9kZV9tb2R1bGVzL2x1Y2lkZS1yZWFjdC9kaXN0L2VzbS9pY29ucy9naXQtZm9yay5qcz9iMDBmIl0sInNvdXJjZXNDb250ZW50IjpbIi8qKlxuICogbHVjaWRlLXJlYWN0IHYwLjI5Mi4wIC0gSVNDXG4gKi9cblxuaW1wb3J0IGNyZWF0ZUx1Y2lkZUljb24gZnJvbSAnLi4vY3JlYXRlTHVjaWRlSWNvbi5qcyc7XG5cbmNvbnN0IEdpdEZvcmsgPSBjcmVhdGVMdWNpZGVJY29uKFwiR2l0Rm9ya1wiLCBbXG4gIFtcImNpcmNsZVwiLCB7IGN4OiBcIjEyXCIsIGN5OiBcIjE4XCIsIHI6IFwiM1wiLCBrZXk6IFwiMW1wZjFiXCIgfV0sXG4gIFtcImNpcmNsZVwiLCB7IGN4OiBcIjZcIiwgY3k6IFwiNlwiLCByOiBcIjNcIiwga2V5OiBcIjFsaDl3clwiIH1dLFxuICBbXCJjaXJjbGVcIiwgeyBjeDogXCIxOFwiLCBjeTogXCI2XCIsIHI6IFwiM1wiLCBrZXk6IFwiMWg3ZzI0XCIgfV0sXG4gIFtcInBhdGhcIiwgeyBkOiBcIk0xOCA5djJjMCAuNi0uNCAxLTEgMUg3Yy0uNiAwLTEtLjQtMS0xVjlcIiwga2V5OiBcIjF1cTR3Z1wiIH1dLFxuICBbXCJwYXRoXCIsIHsgZDogXCJNMTIgMTJ2M1wiLCBrZXk6IFwiMTU4a3Y4XCIgfV1cbl0pO1xuXG5leHBvcnQgeyBHaXRGb3JrIGFzIGRlZmF1bHQgfTtcbi8vIyBzb3VyY2VNYXBwaW5nVVJMPWdpdC1mb3JrLmpzLm1hcFxuIl0sIm5hbWVzIjpbXSwic291cmNlUm9vdCI6IiJ9\n//# sourceURL=webpack-internal:///(ssr)/./node_modules/lucide-react/dist/esm/icons/git-fork.js\n");
-
-/***/ }),
-
 /***/ "(ssr)/./node_modules/lucide-react/dist/esm/icons/github.js":
 /*!************************************************************!*\
   !*** ./node_modules/lucide-react/dist/esm/icons/github.js ***!
