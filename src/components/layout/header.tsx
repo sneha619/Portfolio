@@ -33,8 +33,8 @@ const Header = () => {
 
   const downloadResume = () => {
     const link = document.createElement("a")
-    link.href = "/resume.pdf"
-    link.download = "Sneha_Sarkar_Resume.pdf"
+    link.href = "/Sneha_Sarkar_7439605144(Scaler).pdf"
+    link.download = "Sneha_Sarkar_7439605144(Scaler).pdf"
     link.click()
   }
 
