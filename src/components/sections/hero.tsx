@@ -13,6 +13,13 @@ const Hero = () => {
     }
   }
 
+  const scrollToContact = () => {
+    const element = document.querySelector("#contact")
+    if (element) {
+      element.scrollIntoView({ behavior: "smooth" })
+    }
+  }
+
   return (
     <section id="home" className="min-h-screen flex items-center justify-center pt-16 sm:pt-20 px-3 sm:px-4">
       <div className="container mx-auto">
@@ -59,10 +66,16 @@ const Hero = () => {
               transition={{ delay: 0.8 }}
               className="flex flex-col sm:flex-row items-center gap-4 sm:gap-6 justify-center lg:justify-start"
             >
-              <Button onClick={scrollToProjects} size="lg" className="flex items-center gap-2 w-full sm:w-auto">
-                View My Work
-                <ArrowDown className="w-4 h-4" />
-              </Button>
+              <div className="flex flex-col sm:flex-row gap-3 w-full sm:w-auto">
+                <Button onClick={scrollToProjects} size="lg" className="flex items-center justify-center gap-2 w-full sm:w-auto">
+                  View My Work
+                  <ArrowDown className="w-4 h-4" />
+                </Button>
+                <Button onClick={scrollToContact} variant="outline" size="lg" className="flex items-center justify-center gap-2 w-full sm:w-auto bg-transparent">
+                  Contact Me
+                  <Mail className="w-4 h-4" />
+                </Button>
+              </div>
 
               <div className="flex items-center gap-3 sm:gap-4">
                 <Button variant="outline" size="icon" asChild className="shrink-0 bg-transparent">
@@ -85,10 +98,14 @@ const Hero = () => {
                     <Code className="w-4 h-4 sm:w-5 sm:h-5" />
                   </a>
                 </Button>
-                <Button variant="outline" size="icon" asChild className="shrink-0 bg-transparent">
-                  <a href="mailto:sneha1995sarkar25@gmail.com" title="Email">
-                    <Mail className="w-4 h-4 sm:w-5 sm:h-5" />
-                  </a>
+                <Button
+                  variant="outline"
+                  size="icon"
+                  className="shrink-0 bg-transparent"
+                  onClick={scrollToContact}
+                  title="Send Email / Contact"
+                >
+                  <Mail className="w-4 h-4 sm:w-5 sm:h-5" />
                 </Button>
               </div>
             </motion.div>

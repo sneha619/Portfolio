@@ -17,6 +17,6 @@ export const CONTACT_INFO = [
     icon: MapPin,
     title: "Location",
     value: "Kolkata, West Bengal, India",
-    href: "#",
+    href: "https://www.google.com/maps/search/?api=1&query=Kolkata,+West+Bengal,+India",
   },
 ]
